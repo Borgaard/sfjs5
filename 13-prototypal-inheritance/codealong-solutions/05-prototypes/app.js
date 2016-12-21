@@ -9,6 +9,7 @@ Dog.prototype.bark = function() { return "Woof! I'm " + this.name; }
 // OR Alternate form:
 // The disadvantage here is that we're overwriting any existing properties on
 // the prototype
+// literal object creation.
 Dog.prototype = {
   species: "Canis Canis",
   speak: function() { return "Woof! I'm " + this.name; }
